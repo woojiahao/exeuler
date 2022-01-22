@@ -1,8 +1,8 @@
-defmodule ExeulerTest do
+defmodule ExEulerTest do
   use ExUnit.Case
-  doctest Exeuler
 
-  test "greets the world" do
-    assert Exeuler.hello() == :world
+  test "problem 1" do
+    assert ExEuler.Problem1.solve(10) == 23
+    ExEuler.Problem1.solve(1000) |> IO.inspect()
   end
 end
