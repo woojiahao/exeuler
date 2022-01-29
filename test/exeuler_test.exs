@@ -16,6 +16,6 @@ defmodule ExEulerTest do
   end
 
   test "problem 4" do
-    ExEuler.Problem4.solve(3) |> IO.inspect()
+    ExEuler.Problem4.solve(2) |> IO.inspect()
   end
 end
