@@ -18,4 +18,8 @@ defmodule ExEulerTest do
   test "problem 4" do
     ExEuler.Problem4.solve(2) |> IO.inspect()
   end
+
+  test "problem 5" do
+    ExEuler.Problem5.solve(20) |> IO.inspect()
+  end
 end
