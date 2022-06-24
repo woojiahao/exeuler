@@ -8,7 +8,7 @@ defmodule ExEuler.Problem5 do
     |> Enum.chunk_every(2, 1, :discard)
     |> Enum.with_index()
     |> Enum.reduce(1, fn
-      {[1, 2], 0}, _ -> lcm(1, 2)
+      {_, 0}, _ -> lcm(1, 2)
       {[_, y], _}, acc -> lcm(acc, y)
     end)
   end
